@@ -1,7 +1,9 @@
 ## CHANGES
 
+### 1.0.57
+- QA & CI/CD fixes [kiorky]
 ### 1.0.56
-- Customizable auth payload support (2Factor, api auth) [Markus Kötter <koetter@cispa.de>]}
+- Customizable auth payload support (2Factor, api auth) [Markus Kötter <koetter@cispa.de>])
 
 ### 1.0.55
 - ensure requests is in requirements [kiorky]
