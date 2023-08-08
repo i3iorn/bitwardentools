@@ -58,7 +58,7 @@ class TestBitwardenInteg(unittest.TestCase):
         for attr, email, password in self.get_users():
             try:
                 self.client.delete_user(email)
-            except (bwclient.UserNotFoundError):
+            except bwclient.UserNotFoundError:
                 pass
 
     @classmethod

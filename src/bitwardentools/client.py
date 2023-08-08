@@ -685,7 +685,7 @@ class Client(object):
         login=True,
         cache=None,
         vaultier=False,
-        authentication_cb=None
+        authentication_cb=None,
     ):
         # goal is to allow shared cache amongst client instances
         # but also if we want totally isolated caches
@@ -1042,7 +1042,6 @@ class Client(object):
                 return self.finish_orga(v, token=token, cache=cache, complete=complete)
         except KeyError:
             pass
-        import pdb;pdb.set_trace()
         exc = OrganizationNotFound(f"No such organization found {orga}")
         exc.criteria = [orga]
         raise exc
